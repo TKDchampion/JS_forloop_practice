@@ -1,0 +1,32 @@
+<script>
+var arr = [];
+var arr2 = [];
+var arr3 = [];
+var array = [];
+for(var i=1;i<=1000;i++)
+{
+  arr[i] = i;
+  //arr.push(i);
+}
+
+
+for(var x=1; x<=arr.length; x++){
+  if(arr[x]%2 === 0){
+    arr2.push(x);
+  }
+
+  if(arr[x]%3 === 0){
+    arr3.push(x);
+  }
+
+  if(arr[x]%2 === 0 && arr[x]%3 === 0){
+    array.push(x);
+  }
+}
+
+document.write("2的倍數:"+"<br>"+arr2+"<br>");
+document.write("<br>");
+document.write("3的倍數:"+"<br>"+arr3+"<br>");
+document.write("<br>");
+document.write("2&3的倍數:"+"<br>"+array);
+</script>
